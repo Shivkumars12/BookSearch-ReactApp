@@ -1,0 +1,254 @@
+/* Styles for the parent container */
+.parent {
+  display: flex;
+  flex-direction: row; /* Arrange children in a row */
+  width: 100%; /* Occupy full width */
+  height: 100vh; /* Take full viewport height */
+  overflow: scroll; /* Allow scrolling if content overflows */
+}
+
+/* Styles for the main application container */
+.App {
+  padding: 20px; /* Add padding */
+  width: 50%; /* Take up half of the parent's width */
+  height: 90vh; /* Take up 90% of the viewport height */
+  margin: 0 0 100px 0; /* Set margins */
+}
+
+/* Styles for the header */
+header {
+  text-align: center; /* Center-align text */
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Common styles for headings and paragraphs */
+h1 , p {
+  margin-bottom: 10px; /* Add margin at the bottom */
+  color: white; /* Text color */
+  font-weight: 700; /* Bold font weight */
+  font-size: 2rem; /* Font size */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+/* Styles for individual book items */
+.book {
+  position: relative; /* Ensure proper positioning of the bookmark checkbox */
+}
+
+/* Styles for the search bar */
+.search-bar {
+  display: flex; /* Arrange items in a row */
+  align-items: center; /* Center-align items vertically */
+  max-width: 550px; /* Set maximum width */
+  margin: 0 auto; /* Center-align horizontally */
+  padding: 5px; /* Add padding */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 5px; /* Rounded corners */
+  background: rgba(156, 156, 156, 0.4); /* Background color */
+}
+
+/* Styles for search input */
+.search-bar input {
+  flex: 1; /* Take remaining space */
+  padding: 8px; /* Add padding */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  background: transparent; /* Transparent background */
+  color: white; /* Text color */
+  font-size: 15px; /* Font size */
+}
+
+/* Styles for search button */
+.search-bar button {
+  background-color: #007bff; /* Background color */
+  color: #fff; /* Text color */
+  font-size: 15px; /* Font size */
+  border: none; /* Remove border */
+  padding: 8px 15px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  margin: 5px 10px; /* Margin */
+}
+
+/* Hover styles for search button */
+.search-bar button:hover {
+  background-color: #073d76; /* Change background color on hover */
+}
+
+/* Styles for the book list */
+.book-list {
+  display: flex; /* Arrange items in a row by default */
+  flex-wrap: wrap; /* Wrap items to next line if necessary */
+  gap: 20px; /* Gap between items */
+  justify-content: center; /* Center-align items horizontally */
+  width: 100%; /* Occupy full width */
+  margin: 0; /* Remove default margins */
+}
+
+/* Styles for individual book items */
+.book {
+  width: 200px; /* Set width */
+  height: 350px; /* Set height */
+  display: flex; /* Arrange contents in a column */
+  flex-direction: column; /* Arrange contents vertically */
+  border: 1px solid #ddd; /* Border */
+  border-radius: 5px; /* Rounded corners */
+  overflow: scroll; /* Allow scrolling for overflow content */
+  background: #000000; /* Background color */
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Hover styles for individual book items */
+.book:hover {
+  transform: scale(1.02); /* Scale up slightly on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add shadow on hover */
+}
+
+/* Styles for book cover images */
+.book img {
+  width: 100%; /* Take full width */
+  height: 250px; /* Set height */
+  border-top-left-radius: 5px; /* Rounded corners */
+  border-top-right-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for book details */
+.book-details {
+  padding: 10px; /* Add padding */
+}
+
+/* Styles for book titles */
+.book-details h3 {
+  margin: 5px 0; /* Add margin */
+  font-size: 0.9rem; /* Font size */
+  color: white; /* Text color */
+}
+
+/* Styles for book authors */
+.book-details p {
+  margin: 0; /* Reset margin */
+  font-size: 10px; /* Font size */
+  font-weight: 400; /* Font weight */
+  color: #ffffff; /* Text color */
+}
+
+/* Common styles for buttons */
+button {
+  display: block; /* Display as block element */
+  margin: 20px auto; /* Center-align horizontally */
+  background-color: #007bff; /* Background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  font-size: 15px; /* Font size */
+  transition: .9s ease-in-out;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+/* Hover styles for buttons */
+button:hover {
+  background-image: linear-gradient(to right, #007bff, #8bc34a); /* Change background color on hover */
+}
+
+/* Disabled state styles for buttons */
+button:disabled {
+  background-color: #ccc; /* Background color */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
+/* Styles for the side panel */
+.side-panel {
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Position from the top */
+  right: 0; /* Position from the right */
+  width: 30%; /* Set width */
+  height: 100%; /* Take full height */
+  overflow-y: auto; /* Allow vertical scrolling */
+  padding: 20px; /* Add padding */
+  box-shadow: -1px 0 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+  z-index: 1; /* Set z-index */
+  color: white; /* Text color */
+}
+
+/* Styles for headings and paragraphs within side panel */
+.side-panel h2 ,p{
+  margin: 30px 0; /* Add margin */
+  font-size: 2rem; /* Font size */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+/* Styles for unordered list within side panel */
+.side-panel ul {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+
+/* Styles for list items within side panel */
+.side-panel li {
+  display: flex; /* Arrange items in a row */
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Styles for images within list items */
+.side-panel li img {
+  width: 80px; /* Set width */
+  height: 120px; /* Set height */
+  margin-right: 10px; /* Add margin on the right */
+}
+
+/* Styles for bookmark checkbox within books */
+.book .bookmark-checkbox {
+  position: absolute; /* Absolute positioning */
+  bottom: 5px; /* Position from the bottom */
+  right: 5px; /* Position from the right */
+}
+
+/* Styles for bookmarked books */
+.book-bookmarked {
+  border-color: #ff9800; /* Change border color for bookmarked books */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .parent {
+    display: flex; /* Arrange children in a column */
+    flex-direction: column; /* Arrange children in a column */
+  }
+
+  .App {
+    width: 100%; /* Take full width */
+    margin: 0; /* Reset margin */
+  }
+  .book-list {
+    display: flex; /* Arrange items in a column */
+    flex-direction: column; /* Arrange items in a column */
+    gap: 20px; /* Gap between items */
+    justify-content: center; /* Center-align items horizontally */
+    align-items: center; /* Center-align items vertically */
+    width: 100%; /* Occupy full width */
+    margin: auto; /* Center-align horizontally */
+  }
+  .book {
+    width: 250px; /* Set width */
+    height: 400px; /* Set height */
+    display: flex; /* Arrange contents in a column */
+    flex-direction: column; /* Arrange contents vertically */
+  }
+  .book img {
+    height: 300px; /* Set height */
+  }
+  .side-panel {
+    width: 100%; /* Take full width */
+    height: auto; /* Set height to auto */
+    max-height: 100%; /* Set maximum height */
+    border-left: none; /* Remove left border */
+    border-top: 1px solid #ddd; /* Add top border */
+    position: static; /* Static positioning */
+    padding: 20px 0; /* Add padding */
+    overflow-y: auto; /* Allow vertical scrolling */
+    box-shadow: none; /* Remove shadow */
+  }
+}
